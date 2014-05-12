@@ -1,6 +1,8 @@
 crossbrowser-onbeforeunload
 ===========================
 
+<a target="_blank" href="https://github.com/Aelios/crossbrowser-onbeforeunload/blob/master/example.html">Try this : DEMO</a>
+
 Crossbrowser Javascript with custom message on onbeforeunload event.
 
 Tested with : 
