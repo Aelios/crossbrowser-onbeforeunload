@@ -1,0 +1,7 @@
+#dialog {
+	color: white;
+	padding: 20px;
+	background-color: darkorange;
+	position: fixed;
+	z-index: 999;
+}
