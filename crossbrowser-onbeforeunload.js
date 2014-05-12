@@ -4,13 +4,18 @@ window.onbeforeunload = function (e) {
 	if (firefox) {
 		//Add custom dialog
 		//Firefox does not accept window.showModalDialog(), window.alert(), window.confirm(), and window.prompt() furthermore
-		var custom_div = document.createElement("div");
-        document.body.appendChild(custom_div);
-        custom_div.style.visibility = "hidden";
-		custom_div.innerHTML = message; 
-        var left = document.body.clientWidth / 2 - custom_div.clientWidth / 2;
-        custom_div.style.left = left + "px";
-        custom_div.style.visibility = "visible";        
+		var dialog = document.createElement("div");
+        document.body.appendChild(dialog);
+		dialog.id = "dialog";
+        dialog.style.visibility = "hidden";
+		dialog.innerHTML = message; 
+        var left = document.body.clientWidth / 2 - dialog.clientWidth / 2;
+        dialog.style.left = left + "px";
+        dialog.style.visibility = "visible";     
+		//tip with setTimeout
+		setTimeout(function () {
+			document.body.removeChild(document.getElementById("dialog"));
+		}, 0);
 	}
 	return message;
 }
