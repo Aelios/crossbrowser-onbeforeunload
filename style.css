@@ -2,6 +2,6 @@
 	color: white;
 	padding: 20px;
 	background-color: darkorange;
-	position: fixed;
+	position: absolute;
 	z-index: 999;
 }

@@ -7,11 +7,11 @@ window.onbeforeunload = function (e) {
 		var dialog = document.createElement("div");
         	document.body.appendChild(dialog);
 		dialog.id = "dialog";
-        	dialog.style.visibility = "hidden";
+        	dialog.style.display = "none";
 		dialog.innerHTML = message; 
         	var left = document.body.clientWidth / 2 - dialog.clientWidth / 2;
         	dialog.style.left = left + "px";
-		dialog.style.visibility = "visible";     
+		dialog.style.display = "block";     
 		//tip with setTimeout
 		setTimeout(function () {
 			document.body.removeChild(document.getElementById("dialog"));
