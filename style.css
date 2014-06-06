@@ -1,9 +1,15 @@
+body {
+	font-family: Arial;
+}
+
 #dialog {
 	color: white;
+	font-size: 18px;
 	padding: 20px;
 	background-color: darkorange;
 	position: fixed;
 	z-index: 999;
+	font-weight: bold;
 }
 
 #shadow {
