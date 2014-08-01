@@ -3,13 +3,13 @@ body {
 }
 
 #dialog {
-	color: white;
 	font-size: 18px;
 	padding: 20px;
-	background-color: darkorange;
 	position: fixed;
 	z-index: 999;
 	font-weight: bold;
+	border: 2px solid red;
+	color: red;
 }
 
 #shadow {
